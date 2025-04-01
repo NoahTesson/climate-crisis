@@ -1,31 +1,104 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Georgia, sans-serif;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
   line-height: 1.6;
+  background: beige;
   color: #424242;
-  background-color: beige;
-  margin: 0;
 }
 
-.navbar{
-  position: sticky;
+header {
+  background: #4CAF50;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1100px;
   margin: 0 auto;
-  background-color: #4caf50;
+  padding: 0 20px;
+  position: sticky;
 }
 
-h1, h2 {
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #FFD700;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content h2 {
   color: #2196F3;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.content img {
+  width: 50%;
+  max-width: 600px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #4CAF50;
+  color: white;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  main {
+    width: 90%;
+    padding: 15px;
   }
 }
