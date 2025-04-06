@@ -82,6 +82,21 @@ footer {
   margin-top: 20px;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-logos{
+  width: 25px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
